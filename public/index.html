@@ -7,8 +7,22 @@
         <!--<script type="text/javascript" src=""></script> // services here -->
     </head>
     <body>
-   
+            I'm your proxy server!
+
+            <div id="friends"></div>
+            <script src="/lib/react.development.js"></script>
+            <script src="/lib/react-dom.development.js"></script>
+            <script src="http://127.0.0.1:3001/bundle.js"></script>
+            
         <!-- layout here --> 
+               
+
                 
+                <script>
+                    ReactDOM.render(
+                      React.createElement(Friends),
+                      document.getElementById('friends')
+                    );
+                </script>
     </body>
 </html>
