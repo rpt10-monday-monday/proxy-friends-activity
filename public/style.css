@@ -1,12 +1,24 @@
 /* CSS APP WRAPPER -->>>  */
 
-.prx_container{
+/* friend list details text b3b3b3 */
+
+
+body {
+    background-color: #1f1f1f;
+}
+
+.bg-primary {
+    background-color: #1f1f1f;
+}
+
+/* .prx_container{
     width: 1024px;
-    position:relative;
+    border: 1px solid #ff0000;
 }
 
 .prx_wrapper{
     width: 1024px;
+    border: 1px solid #0000ff;
 }    
 .prx_playlist{
     width: 768px;
@@ -18,14 +30,28 @@
     clear: left;
 }
 .prx_player{
-    position:absolute;bottom:0;
+    position:absolute;
+    bottom:0;
+    border: 1px solid #ff00ff;
+} */
+
+#friends{
+    background-color: #000;
+    height: 100%;
+}
+
+.details {
+    color: #b3b3b3;
+}
+
+#friends .songBlock .datePlayed {
+    font-size: .75em;
+}
+#white{
+    color:#fff;
 }
 
 /* FRIENDS LIST -->>> CHANGE THIS STYLING TO NON STRAIGHT CSS */
-#friends{
-    color: #ff00ff;
-}
-
 .songs-list{
     padding-bottom: 35px;
    /* overflow-y: auto; 
@@ -43,6 +69,7 @@
     margin-right: 10px;
     height: 50px;
     width: 50px;
+    border: 2px solid #b3b3b3;
 }
 .leftBlock{
    padding-top: 20px;

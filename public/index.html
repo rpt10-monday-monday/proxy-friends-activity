@@ -7,22 +7,22 @@
         <link rel="stylesheet" type="text/css" href="style.css">
 
         <!--<script type="text/javascript" src=""></script> // services here -->
+
     </head>
     <body>
-                    
+               
         <!-- layout here --> 
         
-        <div class="prx_container"> 
+        <div class="container bg-primary"> 
 
-            <div class="prx_top_wrapper"> 
+            <div class="row"> 
 
-
-                <div class="prx_playlist">
+                <div class="col-md-9">
                     <div id="app"></div>    
                 </div>
 
 
-                <div class="prx_friends">
+                <div class="col-md-3">
                     <div id="friends"></div>
                 </div>
 
@@ -30,7 +30,7 @@
             </div>
 
 
-            <div class="prx_player">
+            <div class="row" style=:background-color: #000;>
                 <div id="Player"></div>
             </div>
 
@@ -51,7 +51,6 @@
                 document.getElementById('Player')
             );              
         </script>
-
 
         <script src="/lib/react.development.js"></script>
         <script src="/lib/react-dom.development.js"></script>
