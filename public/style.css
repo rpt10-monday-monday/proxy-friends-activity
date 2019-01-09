@@ -1,3 +1,55 @@
+/* CSS APP WRAPPER -->>>  */
+
+.prx_container{
+    width: 1024px;
+    position:relative;
+}
+
+.prx_wrapper{
+    width: 1024px;
+}    
+.prx_playlist{
+    width: 768px;
+    float:left;
+}
+.prx_friends{
+    width: 256px;
+    float:left;
+    clear: left;
+}
+.prx_player{
+    position:absolute;bottom:0;
+}
+
+/* FRIENDS LIST -->>> CHANGE THIS STYLING TO NON STRAIGHT CSS */
 #friends{
     color: #ff00ff;
 }
+
+.songs-list{
+    padding-bottom: 35px;
+   /* overflow-y: auto; 
+    height:600px; */
+}
+
+.songBlock {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 270px;
+}
+
+.circMe{
+    border-radius: 50%;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+}
+.leftBlock{
+   padding-top: 20px;
+   float:left; 
+   clear:left;
+}
+.rightBlock{
+    padding-top: 20px;
+    float:left; 
+ }
