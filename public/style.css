@@ -35,10 +35,41 @@ body {
     border: 1px solid #ff00ff;
 } */
 
-#friends{
+.friends{
     background-color: #000;
-    height: 100%;
+    /* overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%; */
 }
+
+/*
+ *  STYLE 1
+ */
+
+ #style-1::-webkit-scrollbar-track
+ {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     border-radius: 8px;
+     background-color: rgb(101, 100, 100);
+ }
+ 
+ #style-1::-webkit-scrollbar
+ {
+     width: 10px;
+     background-color: rgb(101, 100, 100);
+ }
+ 
+ #style-1::-webkit-scrollbar-thumb
+ {
+     border-radius: 8px;
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+     background-color: rgb(48, 48, 48);
+ }
+
+ /* Handle on hover */
+ #style-1::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
 .details {
     color: #b3b3b3;
