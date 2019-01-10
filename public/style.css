@@ -11,11 +11,6 @@ body {
     background-color: #1f1f1f;
 }
 
-
-
-
-
-
 .friends{
     background-color: #000;
     /* overflow-y: scroll;
@@ -56,24 +51,22 @@ body {
     color: #b3b3b3;
 }
 
-#friends .songBlock .datePlayed {
+.small {
     font-size: .75em;
 }
 #white{
     color:#fff;
 }
-#friends .songBlock {
-    cursor: pointer;
-}
 
-/* FRIENDS LIST -->>> CHANGE THIS STYLING TO NON STRAIGHT CSS */
+
+/* FRIENDS LIST -->>> CHANGE THIS STYLING TO USE styled-components.com ? */
 .songs-list{
     padding-bottom: 35px;
    /* overflow-y: auto; 
     height:600px; */
 }
 
-.songBlock {
+/* .songBlock {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 270px;
@@ -94,7 +87,7 @@ body {
 .rightBlock{
     padding-top: 20px;
     float:left; 
- }
+ } */
 
  /* PLAY LIST Change Defaults */
  .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
