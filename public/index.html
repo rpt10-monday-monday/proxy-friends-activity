@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spotify</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!--<script type="text/javascript" src=""></script> // services here -->
+
+    </head>
+    <body>
+               
+        <!-- layout here --> 
+        
+        <div class="container bg-primary"> 
+
+            <div class="row"> 
+
+                <div class="col-md-9">
+                    <div id="app"></div>    
+                </div>
+
+
+                <div class="col-md-3 friends" id="style-1">
+                    <div id="friends"></div>
+                </div>
+
+                
+            </div>
+
+
+            <div class="row"></div>
+                <div id="Player"></div>
+            </div>
+
+
+        </div>
+
+        <script>
+            ReactDOM.render(
+                React.createElement(App),
+                document.getElementById('app')
+            );
+            ReactDOM.render(
+                React.createElement(FriendsApp),
+                document.getElementById('friends')
+            );
+            ReactDOM.render(
+                React.createElement(Player),
+                document.getElementById('Player')
+            );              
+        </script>
+
+        <script src="/lib/react.development.js"></script>
+        <script src="/lib/react-dom.development.js"></script>
+        <script src="http://localhost:5000/bundle.js"></script>
+        <script src="http://127.0.0.1:3003/bundle.js"></script>
+        <script src="http://127.0.0.1:3002/bundle.js"></script>
+
+    </body>
+</html>

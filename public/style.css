@@ -1,0 +1,124 @@
+/* CSS APP WRAPPER -->>>  */
+
+/* friend list details text b3b3b3 */
+
+
+body {
+    background-color: #1f1f1f;
+}
+
+.bg-primary {
+    background-color: #1f1f1f;
+}
+
+
+
+
+
+
+.friends{
+    background-color: #000;
+    /* overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%; */
+}
+
+/*
+ *  Scrollbar
+ */
+
+ #style-1::-webkit-scrollbar-track
+ {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+     border-radius: 8px;
+     background-color: rgb(101, 100, 100);
+ }
+ 
+ #style-1::-webkit-scrollbar
+ {
+     width: 10px;
+     background-color: rgb(101, 100, 100);
+ }
+ 
+ #style-1::-webkit-scrollbar-thumb
+ {
+     border-radius: 8px;
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+     background-color: rgb(48, 48, 48);
+ }
+
+ /* Handle on hover */
+ #style-1::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.details {
+    color: #b3b3b3;
+}
+
+#friends .songBlock .datePlayed {
+    font-size: .75em;
+}
+#white{
+    color:#fff;
+}
+#friends .songBlock {
+    cursor: pointer;
+}
+
+/* FRIENDS LIST -->>> CHANGE THIS STYLING TO NON STRAIGHT CSS */
+.songs-list{
+    padding-bottom: 35px;
+   /* overflow-y: auto; 
+    height:600px; */
+}
+
+.songBlock {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 270px;
+}
+
+.circMe{
+    border-radius: 50%;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #b3b3b3;
+}
+.leftBlock{
+   padding-top: 20px;
+   float:left; 
+   clear:left;
+}
+.rightBlock{
+    padding-top: 20px;
+    float:left; 
+ }
+
+ /* PLAY LIST Change Defaults */
+ .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #353535;
+    border: none;
+ }
+ .table-striped > tbody > tr:nth-child(1n+1) > td, .table-striped > tbody > tr:nth-child(1n+1) > th {
+    border: none;
+ }
+ .table-striped > thead > tr:first-child > td, 
+ .table-striped > tbody > tr:first-child > td,
+ .table-striped > tbody > tr:first-child > th,
+ .table-striped > thead + tbody > tr:first-child > td,
+ table > tbody > tr > td {
+     border: none;
+     border-top:none;
+     border-bottom:none;
+ }
+
+ @media (min-width: 992px){
+    .col-md-2 {
+        width: 12%;
+    }
+}
+.table-striped tbody tr{
+    cursor: pointer;
+}
