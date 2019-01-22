@@ -21,11 +21,11 @@
   "devDependencies": {
     "babel": "^6.23.0",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
-    "http-proxy-middleware": "^0.19.1",
     "nodemon": "^1.18.9",
     "webpack": "^4.28.0"
   },
   "dependencies": {
+    "http-proxy-middleware": "^0.19.1",
     "bootstrap": "^3.4.0",
     "docker": "^1.0.0",
     "dotenv": "^6.2.0",

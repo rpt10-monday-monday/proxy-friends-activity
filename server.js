@@ -5,7 +5,7 @@ if (process.env.NODE_ENV !== 'production') {
 const express = require('express');
 const http = require('http');
 var bodyParser = require('body-parser');
-const proxy = require('http-proxy-middleware');
+var proxy = require('http-proxy-middleware');
 
 const app = express();
 
