@@ -21,6 +21,7 @@
   "devDependencies": {
     "babel": "^6.23.0",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "http-proxy-middleware": "^0.19.1",
     "nodemon": "^1.18.9",
     "webpack": "^4.28.0"
   },

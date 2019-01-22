@@ -6,6 +6,7 @@ const express = require('express');
 const http = require('http');
 var bodyParser = require('body-parser');
 const app = express();
+const proxy = require('http-proxy-middleware');
 
 // change to env 
 const port = process.env.PORT || 3000;
@@ -19,8 +20,13 @@ app.use(express.static('public'));
 // create application/json parser
 app.use(bodyParser.json());
 
-
 app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(proxy("/songs", {target: 'http://ec2-3-87-34-19.compute-1.amazonaws.com/'}));
+app.use(proxy("/filterSongsRock", {target: 'http://ec2-3-87-34-19.compute-1.amazonaws.com:5000/'}));
+app.use(proxy("/filterSongsJazz", {target: 'http://ec2-3-87-34-19.compute-1.amazonaws.com:5000/'}));
+app.use(proxy("/filterSongsPop", {target: 'http://ec2-3-87-34-19.compute-1.amazonaws.com:5000/'}));
+app.use(proxy("/data", {target: 'http://friendscomponent.us-west-1.elasticbeanstalk.com/'}));
 
 app.get('/', function (req, res) {
   res.status(200).send('GET request from the homepage');
