@@ -37,22 +37,22 @@
         <script src="https://s3-us-west-1.amazonaws.com/fec-daproxy/lib/react.development.js"></script>
         <script src="https://s3-us-west-1.amazonaws.com/fec-daproxy/lib/react-dom.development.js"></script>
         <script src="http://ec2-3-87-34-19.compute-1.amazonaws.com/bundle.js"></script>
-        <script src="http://friendscomponent.us-west-1.elasticbeanstalk.com/bundle.js"></script>
+        <script src="http://friends-component-fec.us-west-1.elasticbeanstalk.com/bundle.js"></script>
         <script src="http://audioplayer-dev.us-east-2.elasticbeanstalk.com/bundle.js"></script>
 
         <script>
-            // ReactDOM.render(
-            //     React.createElement(App),
-            //     document.getElementById('app')
-            // );
+            ReactDOM.render(
+                React.createElement(App),
+                document.getElementById('app')
+            );
             ReactDOM.render(
                 React.createElement(FriendsApp),
                 document.getElementById('friends')
             );
-            // ReactDOM.render(
-            //     React.createElement(Player),
-            //     document.getElementById('Player')
-            // );              
+            ReactDOM.render(
+                React.createElement(Player),
+                document.getElementById('Player')
+            );              
         </script>
 
     </body>
